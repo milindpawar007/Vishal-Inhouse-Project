@@ -1,0 +1,124 @@
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.auth-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form label {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.auth-form input {
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.auth-remember label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #111827;
+}
+
+.auth-remember input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 0.4rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Container for the whole page */
+.auth-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header styles */
+.auth-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.auth-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation styles */
+.auth-header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.auth-header nav a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-header nav a:hover {
+  color: #2563eb;
+}
+
+/* Sign up / login button */
+.btn-outline {
+  border: 1px solid #d1d5db;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-weight: 500;
+  color: #1f2937;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}

@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo-icon {
+    font-size: 1.2rem;
+  }
+  
+  .navbar-left h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .navbar-right a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-right a:hover {
+    color: #2563eb;
+  }
+  
+  .signup-btn {
+    background-color: #f3f4f6;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    color: #1f2937;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .signup-btn:hover {
+    background-color: #e5e7eb;
+  }
+  
