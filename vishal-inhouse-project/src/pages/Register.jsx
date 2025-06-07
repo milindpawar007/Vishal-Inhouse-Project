@@ -1,40 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import Navbar from '../component/Navbar';
 const Register = () => {
     return (
-        <div className="auth-container">
-            <header className="auth-header">
-                <h2>API Platform</h2>
-                <nav>
-                    <a href="#">Documentation</a>
-                    <a href="#">API Reference</a>
-                    <a href="#">Examples</a>
-                    <a href="#">Support</a>
-                    <Link to="/" className="btn-outline">Log in</Link>
-                </nav>
-            </header>
+        <>     <Navbar />
+            <div className="auth-container">
 
-            <main className="auth-form">
-                <h2>Create your account</h2>
 
-                <label>Full name</label>
-                <input placeholder="Enter your full name" />
+                <main className="auth-form">
+                    <h2>Create your account</h2>
 
-                <label>Email</label>
-                <input type="email" placeholder="Enter your email" />
+                    <label>Full name</label>
+                    <input placeholder="Enter your full name" />
 
-                <label>Password</label>
-                <input type="password" placeholder="Enter your password" />
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" />
 
-                <label>Confirm password</label>
-                <input type="password" placeholder="Confirm your password" />
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" />
 
-                <button className="btn-primary">Create account</button>
+                    <label>Confirm password</label>
+                    <input type="password" placeholder="Confirm your password" />
 
-                <p className="tos">By signing up, you agree to our Terms of Service and Privacy Policy</p>
-            </main>
-        </div>
+                    <button className="btn-primary">Create account</button>
+
+                    <p className="tos">By signing up, you agree to our Terms of Service and Privacy Policy</p>
+                </main>
+            </div>
+        </>
     );
 };
 
