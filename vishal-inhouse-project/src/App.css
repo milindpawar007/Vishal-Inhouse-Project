@@ -132,32 +132,59 @@ body {
   background-color: var(--bg-main);
   color: var(--text-main);
 }
-
 .sidebar {
-  width: 220px;
-  padding: 1rem;
+  width: 240px;
   background-color: var(--bg-sidebar);
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   border-right: 1px solid var(--border-color);
 }
 
-.sidebar .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+.sidebar-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-logo-full {
+  max-width: 160px;
+  height: auto;
+}
+.sidebar-header h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
   color: var(--text-main);
 }
 
-.sidebar-nav a {
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nav-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border-radius: 9999px;
   color: var(--text-main);
-  font-size: 0.95rem;
   text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
 }
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-item.active {
+  background-color: #e5e7eb;
+  font-weight: 600;
+}
+
 accordion {
   margin-bottom: 0.5rem;
 }
