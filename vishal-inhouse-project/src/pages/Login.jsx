@@ -5,7 +5,7 @@ import Navbar from '../component/Navbar';
 
 const Login = () => {
     return (
-        <>  <Navbar />
+        <> <Navbar authMode="signin" />
             <div className="auth-container">
 
 

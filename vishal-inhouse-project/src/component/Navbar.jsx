@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Custom styles
+import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ authMode }) => {
+    const mode = authMode || "register";
+    const authLink = mode === "signin" ? "/register" : "/signin";
+    const authText = mode === "signin" ? "Sign up" : "Log in";
+
     return (
         <header className="navbar">
             <div className="navbar-left">
@@ -12,7 +16,7 @@ const Navbar = () => {
                 <a href="#">Documentation</a>
                 <a href="#">API Reference</a>
                 <a href="#">Support</a>
-                <Link to="/register" className="signup-btn">Sign up</Link>
+                <Link to={authLink} className="signup-btn">{authText}</Link>
             </nav>
         </header>
     );
