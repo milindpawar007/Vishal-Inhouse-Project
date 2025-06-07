@@ -3,12 +3,12 @@ import Header from '../component/Header';
 
 const Landing = () => {
     return (
-        <div className="landing-layout">
-            <Sidebar />
-            <div className="main-content">
-                <Header />
+        <div className="layout-root">
+            <Header />
+            <div className="layout-body">
+                <Sidebar />
                 <div className="page-content">
-                    {/* Start building your dashboard here */}
+                    {/* Your page content goes here */}
                 </div>
             </div>
         </div>

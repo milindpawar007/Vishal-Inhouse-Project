@@ -2,14 +2,28 @@ import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
     return (
-        <header className="header">
-            <div className="site-title">Test Site · 3021</div>
-            <div className="user-section">
-                <ThemeToggle />
-                <span>Chuck C., Caspia Technologies</span>
-                <img src="https://i.pravatar.cc/40" alt="profile" className="avatar" />
-            </div>
-        </header>
+        <>
+            <header className="header">
+                <div className="header-left">
+                    <img
+                        src="/Logo.jpg"
+                        alt="Caspia Logo"
+                        className="header-logo"
+                    />
+                    <span className="site-title">Test Site · 3021</span>
+                </div>
+                <div className="header-right">
+                    <div className="user-pill">
+                        <span className="user-name">Chuck Ronald</span>
+                    </div>
+                    <div className="theme-toggle-pill">
+                        <ThemeToggle />
+                    </div>
+                    <img src="/Prof_Pic.png" alt="Profile" className="avatar-pill" />
+                </div>
+            </header>
+
+        </>
     );
 };
 

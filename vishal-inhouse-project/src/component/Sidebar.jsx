@@ -9,10 +9,7 @@ import {
 const Sidebar = () => {
     return (
         <aside className="sidebar">
-            <div className="sidebar-header">
-                <img src="/Logo.jpg" alt="Logo" className="sidebar-logo-full" />
 
-            </div>
             <nav className="sidebar-nav">
                 <a href="#" className="nav-item active">
                     <FaHome />
