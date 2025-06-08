@@ -1,5 +1,6 @@
 /* Light Theme Variables */
 body.light {
+  --pill-bg: #e5e7eb;
   --bg-main: #f9fafb;
   --bg-sidebar: #f3f4f6;
   --text-main: #111827;
@@ -14,6 +15,7 @@ body.light {
 
 /* Dark Theme Variables */
 body.dark {
+  --pill-bg: #334155;
   --bg-main: #0f172a;
   --bg-sidebar: #1e293b;
   --text-main: #e2e8f0;
@@ -385,4 +387,31 @@ header {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
+}
+
+
+/* Pill & Avatar Styles */
+
+.user-pill {
+  background-color: var(--pill-bg);
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.theme-toggle-pill {
+  background-color: var(--pill-bg);
+  padding: 0.5rem;
+  border-radius: 9999px;
+}
+
+.avatar,
+.avatar-pill {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+  background-color: var(--pill-bg);
 }
