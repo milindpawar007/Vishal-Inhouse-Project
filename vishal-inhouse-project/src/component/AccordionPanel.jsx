@@ -1,6 +1,6 @@
 // components/AccordionPanel.jsx
 import React from "react";
-import './accordion.css';
+import './AccordionPanel.css';
 const AccordionPanel = ({ title, message, defaultOpen = false }) => {
     return (
         <details className="accordion" open={defaultOpen}>

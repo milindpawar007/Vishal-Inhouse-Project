@@ -1,8 +1,8 @@
 import AccordionPanel from './AccordionPanel';
-import './accordion.css';
-
+import './AccordionPanel.css';
+import './Dashboard.css';
 const Dashboard = () => (
-    <div className="page-content">
+    <div className="dashboard-content">
         <h1 className="text-2xl font-bold mb-1">Dashboard</h1>
         <p className="text-sm text-gray-500 mb-4">
             Site: <strong>Test Site · 3021</strong> (Caspia Technologies)

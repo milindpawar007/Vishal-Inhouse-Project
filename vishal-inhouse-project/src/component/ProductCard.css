@@ -1,0 +1,34 @@
+.product-card {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-main);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .product-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .product-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .product-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+  }
+  
+  .product-description {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+  }
+  
