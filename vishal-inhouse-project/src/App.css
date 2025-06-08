@@ -429,3 +429,39 @@ header {
   border: 2px solid var(--border-color);
   background-color: var(--pill-bg);
 }
+
+.collapsible-section {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-main);
+  margin-bottom: 1.5rem;
+}
+
+.collapsible-summary {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collapsible-summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapsible-content {
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.chevron-icon {
+  transition: transform 0.2s ease;
+}
+
+/* You can simulate this behavior in plain CSS with attribute selectors if not using Tailwind */
+details[open] .chevron-icon {
+  transform: rotate(180deg);
+}
