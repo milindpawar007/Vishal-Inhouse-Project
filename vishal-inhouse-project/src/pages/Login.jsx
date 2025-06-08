@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 import Navbar from '../component/Navbar';
 import { useNavigate } from 'react-router-dom';
 
-const users = [
-    { username: 'admin', password: 'admin123' },
-    { username: 'user', password: 'user123' }
-];
 
-const Login = () => {
+const Login = ({ users }) => {
     const [form, setForm] = useState({ username: '', password: '' });
     const [error, setError] = useState('');
 
