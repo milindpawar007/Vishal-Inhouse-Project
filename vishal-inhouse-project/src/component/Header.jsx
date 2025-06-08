@@ -10,7 +10,7 @@ const Header = () => {
                         alt="Caspia Logo"
                         className="header-logo"
                     />
-                    <span className="site-title">Test Site · 3021</span>
+                    <span className="site-title">Caspia Central</span>
                 </div>
                 <div className="header-right">
                     <div className="user-pill">
